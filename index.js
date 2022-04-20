@@ -1,5 +1,6 @@
-                             // Function declaration
-                    //==========================================
+//==========================================
+// Function declaration
+//==========================================
 
 
 // function fn(){
@@ -9,16 +10,15 @@
 // }
 //
 
-   // Function expression - переменая либо константа которой присвоена функ
-   //    const f3 = function (){
-   //     console.log('hello')
-   //   }
-   // f3();
+// Function expression - переменая либо константа которой присвоена функ
+//    const f3 = function (){
+//     console.log('hello')
+//   }
+// f3();
 
 
-                    //==========================================
+//==========================================
 //                      //function for finding random number
-
 
 
 // let max = 200
@@ -31,7 +31,7 @@
 //
 
 
-                     //==========================================
+//==========================================
 //                           //Function on many parameters
 
 
@@ -46,8 +46,6 @@
 // }
 // shoAllSum(4,5,6,1,3)
 //
-
-
 
 
 // function f1(x,y){
@@ -71,67 +69,68 @@
 //       console.log(r)
 //
 
-                           //==========================================
+//==========================================
 //                                   //Interrupt function
 
 
-//  function IndexOf(arr,num) {
-//      for (i = 0; i < arr.length; i++) {
-//          if (arr[i] === num) return i;
-//          return -1;
-//      }
-//  }
-// let result = IndexOf([40,50,60,70],70)
+// function IndexOf(arr, num) {
+//     for (i = 0; i < arr.length; i++) {
+//         if (arr[i] === num) return i;
+//     }
+//     return -1
+// }
+//
+// let result = IndexOf([40, 50, 65, 60], 45)
 // console.log(result)
+// //
+// //
 //
-//
-//
-//    const arr1 =[ [3,4,5], [6,7,9], [7,7,1]];
-// const arr2 = arr1.filter(function (item){
+// const arr1 = [[3, 4, 5], [6, 7, 9], [7, 7, 1]];
+// const arr2 = arr1.filter(function (item) {
 //     return (sum(item) % 2 === 0)
 // })
-//   console.log(arr2)
-    //   function sum(arr){
-    //     let summ =0;
-    // for (i=0;i<arr.length;i++){
-    //     summ = summ + arr[i];
-    //   }
-// return summ;
-//   }
+// console.log(arr2)
+// function sum(arr) {
+//     let summ = 0;
+//     for (i = 0; i < arr.length; i++) {
+//         summ = summ + arr[i];
+//     }
+//     return summ;
+// }
 
 
-                       //==========================================
+//==========================================
 //                                //Calback function
 
 
-    //
-    // function f1(y) {
-    //   console.log(1)
-    //     y();
-    // }
-    //
-    // function second(a, b){
-    //   console.log(a * b)
-    // }
-    // f1(function () {
-    //   second(2, 10)
-    // });
-    //
-    //
-    // const user = {
-    //   age : 18,
-    //   password : 'asdtdgf',
-    //   agreeToTerm : true
-    // }
-    // function checkPassword(){
-    //   return user.password.length > 6;
-    // }
-    // function checkTerms(){
-    //   return user.agreeToTerm === true;
-    // }
-    // function checkAge(){
-    //   return user.age >= 18;
-    // }
+//
+// function f1(y) {
+//   console.log(1)
+//     y();
+// }
+//
+// function second(a, b){
+//   console.log(a * b)
+// }
+// f1(function () {
+//   second(2, 10)
+// });
+//
+//
+// const user = {
+//   age : 18,
+//   password : 'asdtdgf',
+//   agreeToTerm : true
+// }
+// function checkPassword(){
+//   return user.password.length > 6;
+// }
+// function checkTerms(){
+//   return user.agreeToTerm === true;
+// }
+// function checkAge(){
+//   return user.age >= 18;
+// }
 // console.log(checkAge(user),checkPassword(user))
 
 //
@@ -146,8 +145,73 @@
 // const validator1 = createValid(checkAge, checkPassword, checkTerms)
 // console.log(validator1(user))
 
+// const names = ['evgen', 'alex', 'anna', 'vita']
+//
+// function mapArr(arr, fn) {
+//     const res = []
+//     for (i = 0; i < arr.length; i++) {
+//         res.push(fn(arr[i]))
+//     }
+//     return res;
+// }
+//
+// function namelenght(el) {
+//     console.log(el)
+//     return el.length
+// }
+//
+// function nameToupperCase(el) {
+//     return el.toUpperCase()
+// }
+//
+// const result = mapArr(names, namelenght)
+// const rs = mapArr(names, nameToupperCase)
+// console.log(rs)
 
-                         //==========================================
+
+
+
+// function copyArray(arr, instuck){
+//     const output = [];
+//
+//     for (i=0;i<arr.length;i++){
+//         output.push(instuck(arr[i]))
+//     }
+//     return output;
+// }
+//
+// function summNumber(num){
+//     return num*num;
+// }
+// const result = copyArray([1,2,3,4],summNumber)
+// console.log(result)
+//
+
+
+
+// const arr =[1,2,3,4]
+// const users ={
+//     name:'jekki'
+// }
+// function f1(callback,obj){
+//     arr[3] = arr[3]*2
+//     console.log(arr)
+//     callback(arr);
+// }
+// function showArr(a){
+//     out = '--'
+//     console.log(a.join(out))
+// }
+// function Showname(a){
+//     arr[1]=arr[1] + 4
+//     console.log(a.join(users.name))
+//
+// }
+// f1(Showname,users);
+//
+
+
+//==========================================
 //                                  //Recursion function
 
 //
@@ -236,8 +300,8 @@
 // fact2(5)
 // console.log(s1);
 
-                          //==========================================
-                                        //closure function
+//==========================================
+//closure function
 
 
 //
@@ -282,3 +346,45 @@
 //
 // const calc =createCall(5)
 // calc();
+
+
+//==========================================
+// higher order function
+
+
+// const user = {
+//     age: 29,
+//     password: 'assfhhh',
+//     agree: true
+// }
+// const user2 = {
+//     age: 36,
+//     password: 'asadsgdh',
+//     agree: false
+// }
+//
+// function checkAge(user) {
+//     return user.age > 18
+// }
+//
+// function checkPassword(user) {
+//     return user.password >= 6
+// }
+//
+// function checkAgreement(user) {
+//     return user.agreee === true
+// }
+//
+//
+// function createValidator(...args) {
+//     return function (obj) {
+//         for (i = 0; i < args.length; i++) {
+//             if (args[i](obj) === false) return false;
+//         }
+//         return true;
+//     }
+// }
+//
+// const validator = createValidator(checkAge, checkAgreement)
+// console.log(validator(user))
+
