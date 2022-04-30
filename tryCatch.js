@@ -111,7 +111,10 @@
 // product.info.getInfo()
 //
 
+//=====================================//
 //CALL , BIND , APPLY
+//=====================================//
+
 
 //
 // const user = {
@@ -164,3 +167,31 @@
 // fnLEna()
 // person.logInfo.call(lena, 'Developer', '+244-996-497')
 // person.logInfo.apply(lena, ['Developer', '+244-996-497'])
+
+
+//=====================================//
+//Iteration cycles for massive
+//=====================================//
+//
+// let arr = [1, 2, 3,'BMW','TESLA']
+//
+//
+// for(i = 0;i < arr.length;i++){
+//     console.log(arr[i])
+// }
+//
+// arr.forEach(elem => console.log(elem))
+//
+//
+// for(let item in arr){
+//     console.log(item)
+// }
+//
+//
+// for(let item of arr){
+//     if(item === 'BMW'){
+//         continue;
+//     }
+//     console.log(item)
+// }
+

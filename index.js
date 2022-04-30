@@ -1,7 +1,7 @@
-//==========================================
+// ==========================================
 // Function declaration
-//==========================================
-
+// ==========================================
+//
 
 // function fn(){
 //     const x = 5;
@@ -169,8 +169,6 @@
 // console.log(rs)
 
 
-
-
 // function copyArray(arr, instuck){
 //     const output = [];
 //
@@ -186,7 +184,6 @@
 // const result = copyArray([1,2,3,4],summNumber)
 // console.log(result)
 //
-
 
 
 // const arr =[1,2,3,4]
@@ -346,6 +343,7 @@
 //
 // const calc =createCall(5)
 // calc();
+
 
 
 //==========================================
