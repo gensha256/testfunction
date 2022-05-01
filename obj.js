@@ -53,7 +53,6 @@
 // // console.log(person.fullName )
 
 
-
 //==========================
 //Object prototype
 // Prototypes -  are the mechanism by which JavaScript objects inherit properties from each other.
@@ -62,12 +61,12 @@
 
 // const user = new Object({
 //     name: 'Ivan',
-// //     age: 25,
-// //     city: 'Poltava',
-// //     show() {
-// //         console.log(`${this.name} ${this.age} and i live in ${this.city}`)
-// //     }
-// // })
+//     age: 25,
+//     city: 'Poltava',
+//     show() {
+//         console.log(`${this.name} ${this.age} and i live in ${this.city}`)
+//     }
+// })
 // // Object.prototype.sayHello = function () {
 // //     console.log('Hello', this.name)
 // // }
@@ -84,4 +83,55 @@
 // let entries =Object.entries(user)
 // console.log(entries)
 
+//==========================
+//Methods massive
+//==========================
 
+// const friends =['Max', 'Vitaliy','Vladislav']
+//
+// // Push
+// friends.push('Alex');
+// console.log(friends)
+//
+
+// const people = [
+//     {name: 'Elena', age: 20, budget: 40000},
+//     {name: 'Alex', age: 25, budget: 50000},
+//     {name: 'Max', age: 17, budget: 19000},
+//     {name: 'Mikhail', age: 15, budget: 2000}
+// ]
+
+
+//forEach
+// people.forEach(function (person, index){
+// console.log(person)
+// })
+//
+
+//Map
+//  const newPeople = people.map(function (person){
+//      return person.name
+// })
+// console.log(newPeople)
+
+//Filter
+// const adults = people.filter((person, index) =>  {
+//     if (person.age >= 18) return true ;
+// })
+// console.log(adults)
+
+
+//Reduce
+// const amount = people.reduce(function (total, person,index){
+//     if(person.budget >= 20000){
+//         return total + person.budget
+//     }
+//     return total
+// },0)
+// console.log(amount)
+
+//Find
+//  const names = people.find((person)=>{
+//     return person.name === 'Mikhail'
+// })
+// console.log(names)
