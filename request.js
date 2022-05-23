@@ -104,4 +104,4 @@
 // getData(URL)
 //     .then((res) => {
 //         console.log('Data',res)
-//
+//}
